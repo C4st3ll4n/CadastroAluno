@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:backgroundTint="@android:color/background_light"
+    tools:context="senac.cadaluno.castellan.cadastroaluno.HomeAct"
+    tools:layout_editor_absoluteY="89dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="596dp"
+        android:layout_height="585dp"
+        android:layout_marginBottom="101dp"
+        android:src="@drawable/senac"
+        app:layout_constraintBottom_toTopOf="@+id/btCursos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btAluno"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="283dp"
+        android:layout_marginStart="299dp"
+        android:background="@drawable/alunos"
+        app:layout_constraintBottom_toBottomOf="@+id/btCursos"
+        app:layout_constraintEnd_toStartOf="@+id/btCursos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btCursos"
+        android:onClick="goToAlunos"/>
+
+    <Button
+        android:id="@+id/btCursos"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="144dp"
+        android:layout_marginEnd="298dp"
+        android:background="@drawable/cursos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btAluno"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:onClick="goToCursos"/>
+
+</android.support.constraint.ConstraintLayout>

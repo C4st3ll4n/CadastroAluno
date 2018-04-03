@@ -9,10 +9,8 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
-
 import com.github.rtoshiro.util.format.SimpleMaskFormatter;
 import com.github.rtoshiro.util.format.text.MaskTextWatcher;
-
 import senac.cadaluno.castellan.cadastroaluno.DAO.AlunoDAO;
 import senac.cadaluno.castellan.cadastroaluno.Helper.AlunoHelper;
 import senac.cadaluno.castellan.cadastroaluno.Listas.AlunoListaAct;
